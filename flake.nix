@@ -10,18 +10,13 @@
 
   outputs = {
     flake-parts,
-    pre-commit-hooks,
     nvf,
     ...
   } @ inputs:
     flake-parts.lib.mkFlake {inherit inputs;} {
       systems = ["x86_64-linux"];
 
-      perSystem = {
-        pkgs,
-        system,
-        ...
-      }: let
+      perSystem = {pkgs, ...}: let
         nvim =
           (nvf.lib.neovimConfiguration {
             inherit pkgs;
@@ -29,18 +24,7 @@
           })
           .neovim;
       in {
-        checks = {
-          default = pre-commit-hooks.lib.${system}.run {
-            src = ./.;
-            hooks = {
-              statix.enable = true;
-              nixfmt-rfc-style.enable = true;
-            };
-          };
-        };
-
         formatter = pkgs.alejandra;
-
         packages.default = nvim;
       };
     };
