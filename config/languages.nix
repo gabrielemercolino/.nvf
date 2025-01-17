@@ -5,13 +5,6 @@
         acc // {"${lang}".enable = true;}
     ) {}
     langs;
-
-  enableFormats = langs:
-    builtins.foldl' (
-      acc: lang:
-        acc // {"${lang}".format.enable = true;}
-    ) {}
-    langs;
 in {
   vim.lsp.formatOnSave = true;
 
@@ -23,7 +16,6 @@ in {
       enableExtraDiagnostics = true;
     }
     (enableLanguages ["nix" "markdown"])
-    (enableFormats ["nix" "markdown"])
     {
       nix.format.type = "alejandra";
     }
