@@ -3,7 +3,7 @@
     vimAlias = true;
     viAlias = true;
 
-    spellcheck.enable = true;
+    spellcheck.enable = false;
 
     useSystemClipboard = true;
 
