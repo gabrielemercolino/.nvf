@@ -6,7 +6,11 @@
     ) {}
     langs;
 in {
-  vim.lsp.formatOnSave = true;
+  vim.lsp = {
+    formatOnSave = true;
+    trouble.enable = true;
+    lspSignature.enable = true;
+  };
 
   vim.languages = lib.mkMerge [
     {

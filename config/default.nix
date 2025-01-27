@@ -16,16 +16,27 @@ _: {
       transparent = false;
     };
 
+    tabline.nvimBufferline.enable = true;
+
     statusline.lualine = {
       enable = true;
       theme = "catppuccin";
     };
 
+    autocomplete.nvim-cmp.enable = true;
     autopairs.nvim-autopairs.enable = true;
+    snippets.luasnip.enable = true;
 
     binds = {
       whichKey.enable = true;
       cheatsheet.enable = true;
+    };
+
+    debugger = {
+      nvim-dap = {
+        enable = true;
+        ui.enable = true;
+      };
     };
 
     filetree.neo-tree = {
