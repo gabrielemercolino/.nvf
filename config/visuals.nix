@@ -4,5 +4,6 @@ _: {
     nvim-web-devicons.enable = true;
     nvim-cursorline.enable = true;
     cinnamon-nvim.enable = true;
+    indent-blankline.enable = true;
   };
 }
