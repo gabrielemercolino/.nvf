@@ -19,7 +19,7 @@ in {
       enableTreesitter = true;
       enableExtraDiagnostics = true;
     }
-    (enableLanguages ["nix" "markdown" "clang"])
+    (enableLanguages ["nix" "markdown" "clang" "python"])
     {
       nix.format.type = "alejandra";
     }
