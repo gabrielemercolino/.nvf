@@ -1,5 +1,6 @@
 _: {
   imports = [
+    ./diagnostics.nix
     ./keymaps.nix
     ./languages.nix
     ./settings.nix
@@ -52,8 +53,8 @@ _: {
     };
 
     dashboard = {
-      dashboard-nvim.enable = false;
-      alpha.enable = true;
+      dashboard-nvim.enable = true;
+      #alpha.enable = true;
     };
 
     notify = {
