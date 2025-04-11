@@ -1,8 +1,8 @@
 _: {
   imports = [
     ./diagnostics.nix
-    ./keymaps.nix
     ./languages.nix
+    ./mappings.nix
     ./settings.nix
     ./ui.nix
     ./utility.nix
