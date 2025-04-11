@@ -26,7 +26,6 @@ _: {
 
     autocomplete.nvim-cmp.enable = true;
     autopairs.nvim-autopairs.enable = true;
-    snippets.luasnip.enable = true;
 
     binds = {
       whichKey.enable = true;
@@ -54,15 +53,10 @@ _: {
 
     dashboard = {
       dashboard-nvim.enable = true;
-      #alpha.enable = true;
     };
 
     notify = {
       nvim-notify.enable = true;
-    };
-
-    projects = {
-      project-nvim.enable = true;
     };
 
     notes.todo-comments.enable = true;

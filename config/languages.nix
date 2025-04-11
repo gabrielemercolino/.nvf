@@ -1,7 +1,6 @@
 _: {
   vim.lsp = {
     formatOnSave = true;
-    trouble.enable = true;
     lspSignature.enable = true;
   };
 
