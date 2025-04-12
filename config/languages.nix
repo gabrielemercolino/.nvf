@@ -14,7 +14,10 @@ _: {
       enable = true;
       cHeader = true;
     };
-    markdown.enable = true;
+    markdown = {
+      enable = true;
+      extensions.render-markdown-nvim.enable = true;
+    };
     nix = {
       enable = true;
       format.type = "alejandra";
