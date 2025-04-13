@@ -17,6 +17,7 @@ _: {
     markdown = {
       enable = true;
       extensions.render-markdown-nvim.enable = true;
+      format.type = "prettierd";
     };
     nix = {
       enable = true;
