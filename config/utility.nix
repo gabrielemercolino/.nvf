@@ -7,7 +7,18 @@ _: {
     };
 
     images = {
-      image-nvim.enable = false;
+      image-nvim = {
+        enable = true;
+        setupOpts = {
+          backend = "kitty";
+          editorOnlyRenderWhenFocused = true;
+          integrations.markdown = {
+            enable = true;
+            clearInInsertMode = true;
+            downloadRemoteImages = true;
+          };
+        };
+      };
     };
   };
 }
