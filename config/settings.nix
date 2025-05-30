@@ -5,7 +5,7 @@
 
     spellcheck.enable = false;
 
-    useSystemClipboard = true;
+    clipboard.registers = "unnamedplus";
 
     lineNumberMode = "relative";
 
@@ -13,9 +13,9 @@
 
     undoFile.enable = true;
 
-    scrollOffset = 8;
-
     options = {
+      scrolloff = 8;
+
       tabstop = 2;
 
       shiftwidth = 2;
