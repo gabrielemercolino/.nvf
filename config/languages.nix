@@ -1,11 +1,11 @@
 _: {
   vim.lsp = {
+    enable = true;
     formatOnSave = true;
     lspSignature.enable = true;
   };
 
   vim.languages = {
-    enableLSP = true;
     enableFormat = true;
     enableTreesitter = true;
     enableExtraDiagnostics = true;
@@ -14,6 +14,7 @@ _: {
       enable = true;
       cHeader = true;
     };
+    go.enable = true;
     markdown = {
       enable = true;
       extensions.render-markdown-nvim.enable = true;
