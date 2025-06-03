@@ -5,7 +5,14 @@
 
     spellcheck.enable = false;
 
-    clipboard.registers = "unnamedplus";
+    clipboard = {
+      enable = true;
+      registers = "unnamedplus";
+      providers = {
+        xclip.enable = true;
+        wl-copy.enable = true;
+      };
+    };
 
     lineNumberMode = "relative";
 
