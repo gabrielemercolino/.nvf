@@ -14,6 +14,7 @@ _: {
       enable = true;
       cHeader = true;
     };
+    csharp.enable = true;
     go.enable = true;
     markdown = {
       enable = true;
