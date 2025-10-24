@@ -14,7 +14,6 @@ _: {
       enable = true;
       name = "catppuccin";
       style = "mocha";
-      transparent = false;
     };
 
     tabline.nvimBufferline.enable = true;
