@@ -27,5 +27,20 @@
         formatter = pkgs.alejandra;
         packages.default = nvim;
       };
+
+      flake = {
+        homeManagerModules.default = {
+          config,
+          pkgs,
+          ...
+        }: {
+          imports = [nvf.homeManagerModules.default];
+
+          programs.nvf = {
+            enable = true;
+            settings = import ./config {inherit config pkgs;};
+          };
+        };
+      };
     };
 }
