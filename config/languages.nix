@@ -24,6 +24,7 @@ _: {
     nix = {
       enable = true;
       format.type = "alejandra";
+      extraDiagnostics.types = ["deadnix"];
     };
     python.enable = true;
   };
