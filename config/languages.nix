@@ -16,6 +16,10 @@ _: {
     };
     csharp.enable = true;
     go.enable = true;
+    kotlin = {
+      enable = true;
+      extraDiagnostics.enable = false;
+    };
     markdown = {
       enable = true;
       extensions.render-markdown-nvim.enable = true;
