@@ -3,6 +3,7 @@ _: {
     enable = true;
     formatOnSave = true;
     lspSignature.enable = true;
+    inlayHints.enable = true;
   };
 
   vim.languages = {
