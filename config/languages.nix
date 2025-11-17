@@ -32,5 +32,6 @@ _: {
       extraDiagnostics.types = ["deadnix"];
     };
     python.enable = true;
+    ts.enable = true;
   };
 }
