@@ -1,4 +1,4 @@
-_: {
+{pkgs, ...}: {
   vim.lsp = {
     enable = true;
     formatOnSave = true;
@@ -34,4 +34,8 @@ _: {
     python.enable = true;
     ts.enable = true;
   };
+
+  vim.treesitter.grammars = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
+    ron
+  ];
 }
