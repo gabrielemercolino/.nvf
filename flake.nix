@@ -40,7 +40,6 @@
           imports = [nvf.homeManagerModules.default];
 
           programs.nvf = {
-            enable = true;
             settings = import ./config {inherit config pkgs;};
           };
         };
